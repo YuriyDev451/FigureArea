@@ -32,9 +32,9 @@ fun main() {
         val name = it.getName()
 
         when(it) {
-            is TwoDimensional -> println(name +"="+ it.calculateArea() )
-            is ThreeDimensional -> println(name +"="+ it.calculateVolume())
 
+            is ThreeDimensional -> println(name+" area" +"="+ it.calculateArea()+"\n"+ name+"Volume= "+ it.calculateVolume())
+            is TwoDimensional -> println(name +"="+ it.calculateArea() )
             else -> throw Exception("Error")
         }
     }

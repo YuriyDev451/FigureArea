@@ -3,9 +3,8 @@ package Figure
 import Shape
 import ShapeType
 import ThreeDimensional
-import TwoDimensional
 
-class Sphere(val r: Double): TwoDimensional, ThreeDimensional, Shape() {
+class Sphere(val r: Double): ThreeDimensional, Shape() {
     override fun calculateVolume(): Double {
         return (4/3) * P*(r*r*r)
     }
